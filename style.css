@@ -32,17 +32,7 @@ h3 {
   border-radius: 3px;
 }
 
-#senha {
-  display: block;
-  margin: 10px auto;
-  width: 95%;
-  height: 30px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-#submit {
+.submit {
   display: block;
   margin: 10px auto;
   width: 50%;
@@ -57,7 +47,7 @@ h3 {
   transition: 0.3s;
 }
 
-#submit:hover {
+.submit:hover {
   background-color: #45a049;
   border: 1px solid #45a049;
 }
