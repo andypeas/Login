@@ -1,7 +1,5 @@
 # Tela de login
 
-### Tela de login simples
-
 #### **Login:** *admin*
 
 #### **Senha:** *admin*
