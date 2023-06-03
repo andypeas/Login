@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form>
       <h3>Insira o seu login</h3>
-      <input class="login" type="text" placeholder="Login" id="login" />
-      <input class="login" type="password" placeholder="Senha" id="senha" />
-      <input class="submit" type="submit" value="Entrar" onclick="logar(); return false" />
+      <input type="text" placeholder="Login" id="login" />
+      <input type="password" placeholder="Senha" id="pswrd" />
+      <input type="submit" value="Entrar" id="submit" onclick="logar(); return false" />
     </form>
 
     <script>
       function logar() {
         var login = document.getElementById("login").value;
-        var senha = document.getElementById("senha").value;
+        var pswrd = document.getElementById("pswrd").value;
 
-        if (login == "admin" && senha == "admin") {
+        if (login == "admin" && pswrd == "admin") {
           alert("Acesso liberado!");
         } else {
           alert("Acesso negado!");
