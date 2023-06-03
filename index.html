@@ -11,22 +11,9 @@
   <body>
     <form>
       <h3>Insira o seu login</h3>
-      <input type="text" placeholder="Login" id="login" />
-      <input type="password" placeholder="Senha" id="pswrd" />
-      <input type="submit" value="Entrar" id="submit" onclick="logar(); return false" />
+      <input type="text" placeholder="Login" id="login" required />
+      <input type="password" placeholder="Senha" id="pswrd" required />
+      <input type="submit" value="Entrar" id="submit" />
     </form>
-
-    <script>
-      function logar() {
-        var login = document.getElementById("login").value;
-        var pswrd = document.getElementById("pswrd").value;
-
-        if (login == "admin" && pswrd == "admin") {
-          alert("Acesso liberado!");
-        } else {
-          alert("Acesso negado!");
-        }
-      }
-    </script>
   </body>
 </html>
